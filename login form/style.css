@@ -1,74 +1,85 @@
-body{
+*{
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
+   font-family: fantasy;
+}
+
+body{
    display: flex;
    justify-content: center;
    align-items: center;
    min-height: 100vh;
-   background:linear-gradient(to bottom ,#0f0c29,#792572,#80296d)
+   background: url("img.jpg") no-repeat center / cover;
    
 }
 
 .main{
    display: flex;
    justify-content: center;
-   height: 600px;
-   width: 450px;
-   background: red;
+   height: 100%;
+   width: 100%;
    overflow: hidden;
-   background: url("1.jpg") no-repeat center / cover;
-   border-radius: 20px;
    background-size: cover;
 }
 
 .form{
-  
    height: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
-   font-family:fantasy;
    border-radius: 40px;
-   
+   background-color: rgba(199, 186, 195, 0.4);
    margin-top: 0px;
-   height: 500px;
+   height: 600px;
    width: 500px;
-   margin-left: -50px;
 }
 
 span{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 0px;
     color: white;
 }
 
 .form .username{
-    width: 100%;
-    height: 50px;
+    width: 300px;
+    height: 30px;
     background: transparent;
-    margin-top: 42px;
+    margin-top: 60px;
+    padding-top: 9px;
 }
 
  .form .username input{
     background: transparent;
     width: 100%;
-    height: 30px;
-    color: aliceblue;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 4px 5px 9px 1px;
  }
  
  .form .password{
     width: 100%;
-    height: 50px;
+    height: 30px;
     background: transparent;
-    margin-top: 20px;
+    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .form .password input{
     background: transparent;
     width: 100%;
-    height: 30px;
-    
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 4px 5px 9px 2px;
+ }
+
+ .form i{
+   display: flex;
+   align-items: right;
+   justify-content: right;
+   margin-top: -30px;
+   margin-right: 10px;
  }
 
  .username input::placeholder{
@@ -83,51 +94,59 @@ span{
     font-family: fantasy;
  }
 
- hr{
-    color: black;
-    position: relative;
-    top: 0px;
-
- }
-
- .forget{
+ .remember-forgot{
     text-align: left;
     position: relative;
-    margin-top: 20px;
+    margin-top: 80px;
     font-size: 15px;
     color: aliceblue;
     font-weight: 20px;
     cursor: pointer;
  }
 
+ .remember-forgot a{
+   display: flex;
+   margin-top: 20px;
+   color: #410c35;
+ }
+
 .submit{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 140px;
-    height: 30px;
-    padding-top: 7px;
+    height: 40px;
+    padding-top: 4px;
     border-radius: 20px;
     border: none;
-    font-size: 15px;
+    font-size: 19px;
     text-align: center;
-    color: rgb(12, 7, 0);
-    margin-left: 60px;
+    color:#410c35;
     background-color: whitesmoke;
     position: relative;
-    top: 20px;
+    top: 50px;
+    margin-left: 80px;
 }
 
-.signup{
+.submit:hover{
+   background-color:#410c35;
+   color: aliceblue;
+}
+
+.signup {
     display: flex;
     justify-content: center;
-    position:relative;
-    top:30px;
-    font-size: 13px;
+    justify-content: center;
+    margin-top:70px;
+    font-size: 15px;
     color: aliceblue;
-    margin-left: 50px;
+    margin-left: 5px;
+    
 }
 
 .signup:hover{
-    background-color: #80296d;
+    background-color:#410c35;
     cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
 }
