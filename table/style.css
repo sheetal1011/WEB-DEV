@@ -1,0 +1,14 @@
+th,td,tr{
+    border: 2px solid black;
+    padding: 20px;
+}
+
+th,td{
+    background-color: #96D4D4;
+}
+th{
+    background-color: aqua;
+}
+td{
+    background-color: rgb(62, 190, 148);
+}
